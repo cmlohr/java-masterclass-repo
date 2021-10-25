@@ -1,7 +1,7 @@
 public class Hello {
 
     public static void main(String[] args) {
-        System.out.println("Hello, Buddy");
+        System.out.println("Hello World");
 
     int Num = 3;
         System.out.println(Num);
@@ -14,6 +14,12 @@ public class Hello {
 
     int thisIsSix = (36 / 6);
         System.out.println(thisIsSix);
+
+    int myTotal = Num + newNum + thisIsTwelve + thisIsSix;
+        System.out.println(myTotal);
+
+    int theLastOne = 1000 - myTotal;
+        System.out.println(theLastOne);
     }
 }
 

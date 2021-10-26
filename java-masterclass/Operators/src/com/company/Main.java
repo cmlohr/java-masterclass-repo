@@ -53,7 +53,7 @@ public class Main {
         // & bitwise AND operator, working at the bit level
         // | bitwise OR operator, working at the bit level
         // ! or NOT the logical complement operator
-        // ternary operator ? is used as a shortcut to assign one of two values depending on the conditions.
+        // ternary operator ?: is used as a shortcut to assign one of two values depending on the conditions.
         boolean isCat = false;
         if (isCat == false) {
             System.out.println("This is not a cat!");
@@ -98,5 +98,10 @@ public class Main {
             System.out.println("You have too many cats!");
         }
         else System.out.println("You need moar cats!");
+
+        //quick math
+        int sJ = 130 * 3;
+        int sop = 570;
+        System.out.println(sJ + sop);
     }
 }

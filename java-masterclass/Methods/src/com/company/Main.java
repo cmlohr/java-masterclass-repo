@@ -10,17 +10,13 @@ public class Main {
         int happyBar = 200;
         int karma = 10;
 
-        newScore(true, 800, lastLevel, karma, healthBar, staminaBar, happyBar);
+        int archivedScore = newScore(true, 800, lastLevel, karma, healthBar, staminaBar, happyBar);
+        System.out.println(archivedScore);
     }
 
-// Create a new method for our mock game below
-public static void newScore(boolean gameOver,int score,int lastLevel,int karma,
-                            int healthBar, int staminaBar, int happyBar) {
-    if(gameOver) {
-        int scoreTally = score + (healthBar + staminaBar + happyBar) + (karma * 2) * lastLevel;
-        System.out.println("Game Over" + "\nFinal Score: " + scoreTally);
-
-    }
+    // Create a new method for our mock game below
+    public static int newScore(boolean gameOver, int score, int lastLevel, int karma,
+                               int healthBar, int staminaBar, int happyBar) {
         if (score < 10000 && score >= 1000) {
             int lostStamina = staminaBar - 40;
             int lostHappy = happyBar - 100;
@@ -35,5 +31,12 @@ public static void newScore(boolean gameOver,int score,int lastLevel,int karma,
             System.out.println("Congrats, onto level " + newLevel + "!" + "\nKarma: +" + newKarma);
         }
 
-
-    }}
+        if (gameOver) {
+            int scoreTally = score + (healthBar + staminaBar + happyBar) + (karma * 2) * lastLevel;
+            System.out.println("Game Over" + "\nFinal Score: " + scoreTally);
+            return scoreTally;
+        } else {
+            return -1;
+        }
+    }
+}

@@ -12,6 +12,22 @@ public class Main {
 
         int archivedScore = newScore(true, 800, lastLevel, karma, healthBar, staminaBar, happyBar);
         System.out.println(archivedScore);
+
+
+//  Challenge!
+// 1 Create method 'scorePosition(screenName, position) - displays player name w/position
+// 2 Create method 'calcPosition(newScore)'
+
+
+
+
+
+
+
+
+
+
+
     }
 
     // Create a new method for our mock game below

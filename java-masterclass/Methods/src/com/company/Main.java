@@ -14,22 +14,16 @@ public class Main {
         System.out.println(archivedScore);
 
 
-//  Challenge!
+
+        //  Challenge!
 // 1 Create method 'scorePosition(screenName, position) - displays player name w/position
 // 2 Create method 'calcPosition(newScore)'
 
 
-
-
-
-
-
-
-
-
-
     }
-
+    public static void scorePosition(String screenName, int position) {
+        System.out.println(screenName + "New high score! " + position);
+    }
     // Create a new method for our mock game below
     public static int newScore(boolean gameOver, int score, int lastLevel, int karma,
                                int healthBar, int staminaBar, int happyBar) {

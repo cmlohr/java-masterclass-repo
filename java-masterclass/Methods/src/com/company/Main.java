@@ -1,3 +1,5 @@
+//File is a WIP
+
 package com.company;
 
 public class Main {
@@ -13,6 +15,8 @@ public class Main {
         int archivedScore = newScore(true, 800, lastLevel, karma, healthBar, staminaBar, happyBar);
         System.out.println(archivedScore);
 
+        int position = calcPosition(4500);
+        scorePosition("Bobby", position);
 
 
         //  Challenge!
@@ -21,9 +25,14 @@ public class Main {
 
 
     }
+
     public static void scorePosition(String screenName, int position) {
-        System.out.println(screenName + "New high score! " + position);
+        System.out.println(screenName + "New high score! "
+                + position);
+
     }
+
+
     // Create a new method for our mock game below
     public static int newScore(boolean gameOver, int score, int lastLevel, int karma,
                                int healthBar, int staminaBar, int happyBar) {
@@ -47,6 +56,19 @@ public class Main {
             return scoreTally;
         } else {
             return -1;
+        }
+
+    }
+
+    public static int calcPosition(int newScore) {
+        if (newScore > 1000) {
+            return 1;
+        } else if (newScore > 500 && newScore < 1000) {
+            return 2;
+        } else if (newScore > 100 && newScore < 500) {
+            return 3;
+        } else {
+            return 4;
         }
     }
 }
